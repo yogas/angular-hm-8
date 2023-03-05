@@ -41,4 +41,12 @@ export class AppComponent {
       'list-group-item-danger': server.status === 'critical'
     };
   }
+  addServer (): void {
+    this.servers.push({
+      instanceType: 'medium',
+      name: 'new Server',
+      status: 'stable',
+      started: new Date()
+    })
+  }
 }
