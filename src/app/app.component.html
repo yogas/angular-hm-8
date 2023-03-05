@@ -7,6 +7,7 @@
       <div class="form-group">
         <button type="button" class="btn btn-primary" (click)="addServer()">Add server</button>
       </div>
+      <h1>App status: {{ appStatus | async }}</h1>
       <ul class="list-group">
         <li
           class="list-group-item"
